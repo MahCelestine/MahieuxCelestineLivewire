@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --color-rosefirst: #f22fc0;
+    --color-purplesecond: #a91be1;
+    --color-bluelast: #08cafd;
+    --color-backblack: #1b0d24;
+    --color-backpurple: #36094d;
+    --color-backrose: #3c0f2d;
+    --color-palepurple: #9985ad;
+}
