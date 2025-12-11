@@ -180,6 +180,13 @@
                             <input type="text" id="title_user" wire:model="title_user"
                                 class="w-full bg-backblack/70 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-palepurple/50 focus:border-rosefirst focus:outline-none transition-all duration-300 text-sm md:text-base"
                                 placeholder="Entrez le titre...">
+
+                            @if($mauvaises_reponses[0] == 1)
+                                <p class="text-red-400 text-sm mt-1 flex items-center gap-1">
+                                <i class='bx bx-x-circle'></i>
+                                Mauvaise réponse
+                                </p>
+                            @endif
                         </div>
 
                         <!-- Artiste -->
@@ -190,6 +197,12 @@
                             <input type="text" id="artist_user" wire:model="artist_user"
                                 class="w-full bg-backblack/70 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-palepurple/50 focus:border-purplesecond focus:outline-none transition-all duration-300 text-sm md:text-base"
                                 placeholder="Entrez l'artiste...">
+                                @if($mauvaises_reponses[1] == 1)
+                                <p class="text-red-400 text-sm mt-1 flex items-center gap-1">
+                                <i class='bx bx-x-circle'></i>
+                                Mauvaise réponse
+                                </p>
+                            @endif
                         </div>
 
                         <!-- Album -->
@@ -200,6 +213,12 @@
                             <input type="text" id="album_user" wire:model="album_user"
                                 class="w-full bg-backblack/70 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-palepurple/50 focus:border-bluelast focus:outline-none transition-all duration-300 text-sm md:text-base"
                                 placeholder="Entrez l'album...">
+                                @if($mauvaises_reponses[2] == 1)
+                                <p class="text-red-400 text-sm mt-1 flex items-center gap-1">
+                                <i class='bx bx-x-circle'></i>
+                                Mauvaise réponse
+                                </p>
+                            @endif
                         </div>
 
                         <!-- Année -->
@@ -210,6 +229,12 @@
                             <input type="text" id="year_user" wire:model="year_user"
                                 class="w-full bg-backblack/70 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-palepurple/50 focus:border-cyan-500 focus:outline-none transition-all duration-300 text-sm md:text-base"
                                 placeholder="Entrez l'année...">
+                                @if($mauvaises_reponses[3] == 1)
+                                <p class="text-red-400 text-sm mt-1 flex items-center gap-1">
+                                <i class='bx bx-x-circle'></i>
+                                Mauvaise réponse
+                                </p>
+                            @endif
                         </div>
 
                     </div>

@@ -10,7 +10,7 @@
     </h2>
     
     <div class="flex flex-col items-center gap-6">
-        <a href="/game" class="relative bg-gradient-to-r from-rosefirst to-purplesecond text-white px-10 py-4 md:px-12 md:py-5 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md shadow-[0_0_20px_rgba(255,107,107,0.5),0_0_40px_rgba(157,78,221,0.3)] group">COMMENCER À JOUER</a>
+        <a href="/game" class="relative bg-gradient-to-r from-rosefirst to-purplesecond text-white px-10 py-4 md:px-12 md:py-5 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md ">COMMENCER À JOUER</a>
         <a href="/rules" class="text-palepurple transition duration-300 font-medium text-lg border-b-2 border-transparent hover:border-palepurple pb-1">Voir les règles</a>
     </div>
     </div>

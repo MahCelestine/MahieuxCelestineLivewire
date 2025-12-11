@@ -62,6 +62,8 @@ class GamePage extends Component
 
     public $end_game = false;
 
+    public $mauvaises_reponses = [0, 0, 0, 0];
+
     public function mount()
     {
         $this->StartNewGame();
@@ -73,6 +75,7 @@ class GamePage extends Component
         $this->total_score = 0;
         $this->current_level = 1;
         $this->bonnes_reponses = [0, 0, 0, 0];
+        $this->mauvaises_reponses = [0, 0, 0, 0];
 
         $this->songs_list = KpopSong::inRandomOrder()->limit($this->total_songs)->get()->toArray();
         if (empty($this->songs_list)) {
@@ -97,6 +100,7 @@ class GamePage extends Component
         $this->historical_level = [];
         $this->game_over_music = false;
         $this->songs_lost = 0;
+        $this->mauvaises_reponses = [0, 0, 0, 0];
 
         $this->title_user = "";
         $this->artist_user = "";
@@ -147,6 +151,8 @@ class GamePage extends Component
 
     public function SubmitAnswers()
     {
+        $this->mauvaises_reponses = [0, 0, 0, 0];
+
         $this->validate([
             'title_user' => 'nullable|string',
             'artist_user' => 'nullable|string',
@@ -182,6 +188,8 @@ class GamePage extends Component
                     $this->total_score -= 5;
                 }
                 $this->title_user = "";
+                $this->mauvaises_reponses[0] = 1;
+                
             }
         }
 
@@ -197,6 +205,7 @@ class GamePage extends Component
                     $this->total_score -= 5;
                 }
                 $this->artist_user = "";
+                $this->mauvaises_reponses[1] = 1;
             }
         }
 
@@ -212,6 +221,7 @@ class GamePage extends Component
                     $this->total_score -= 5;
                 }
                 $this->album_user = "";
+                $this->mauvaises_reponses[2] = 1;
             }
         }
 
@@ -227,6 +237,7 @@ class GamePage extends Component
                     $this->total_score -= 5;
                 }
                 $this->year_user = "";
+                $this->mauvaises_reponses[3] = 1;
             }
         }
 
