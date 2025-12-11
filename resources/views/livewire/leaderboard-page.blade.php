@@ -21,9 +21,9 @@
             </tbody>
         </table>
     @elseif($is_connected)
-        <p>Vous n'avez pas encore de score enregistré</p>
+        <p class="text-3xl md:text-4xl text-white mb-15 mt-10 text-center">Vous n'avez pas encore de score enregistré</p>
     @elseif(!$is_connected)
-        <p>Connectez-vous pour voir votre position dans le classement</p>
+        <p class="text-3xl md:text-4xl text-white mb-15 mt-10 text-center">Connectez-vous pour voir votre position dans le classement</p>
     @endif
     <h1 class="text-4xl md:text-5xl font-bold text-white text-center mb-15 mt-10">TOP 50</h1>
 
