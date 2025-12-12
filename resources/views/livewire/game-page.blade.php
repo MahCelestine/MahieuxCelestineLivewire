@@ -119,7 +119,7 @@
                                 $nextLevel = 1;
                             elseif ($nextPlay <= 4)
                                 $nextLevel = 2;
-                            elseif ($nextPlay <= 4)
+                            elseif ($nextPlay <= 6)
                                 $nextLevel = 3;
                             elseif ($nextPlay <= 8)
                                 $nextLevel = 4;

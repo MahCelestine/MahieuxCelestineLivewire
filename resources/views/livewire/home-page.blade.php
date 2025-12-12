@@ -1,6 +1,6 @@
 <div>
     <div class="m-auto text-center w-full max-w-6xl sm:px-10 lg:px-8 py-8 md:py-20">
-    <h1 class="text-white text-3xl md:text-6xl font-extrabold leading-tight mb-4 mt-30">Maîtrisez le Royaume de la K-Pop.</h1>
+    <h1 class="text-white text-3xl md:text-6xl font-extrabold leading-tight mb-4 mt-30">Maîtrisez le Royaume de la musique.</h1>
     <h1 class="text-3xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-rosefirst via-purplesecond to-bluelast bg-clip-text text-transparent mb-8">
         Votre expertise musicale sera votre arme.
     </h1>
